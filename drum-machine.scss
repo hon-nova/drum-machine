@@ -1,0 +1,73 @@
+.main-content {
+   display: grid;
+   grid-template-columns: 3fr 6fr 3fr;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .central {    
+   padding: 10px;
+ }
+ hr {
+   height: 3px;
+   color: #d0d0d5;
+   margin: 15px auto;
+ }
+ body {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   background-color: #d0d0d5;
+ }
+//  drum
+.drums-main {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin: 200px auto;  
+   border: 5px solid grey;
+   border-radius: 10px;
+   padding: 5px;
+   background-color: rgb(51, 50, 50);
+
+}
+.drum-left, .drum-right {
+   position: relative;
+   width: 50%;
+   border: 3px dotted black
+}
+.drum-first,.drum-second,.drum-third{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.drum-pad > button {
+   width:100px;
+   height: 100px;
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 2px;
+   background: linear-gradient(rgb(255,0,0),rgb(0,255,0),rgb(0,0,255));
+   // transition: transform 0.3s;
+   border: 1px solid goldenrod;
+}
+.drum-pad > button:hover {
+   transform: scale(1.05); 
+}
+#display{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   height: 80px;
+   background-color: #d0d0d5;
+   margin: auto;
+
+  position: relative;
+  border: 25px solid transparent;
+  padding: 5px;
+  border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxNBYr_eUxb7RpKG8xC8Uptc0oiJxjN5sQgA&usqp=CAU") 30 round;
+
+  font-family: Raleway, sans-serif;
+}

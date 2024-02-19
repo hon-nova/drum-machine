@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="drum-machine.css">
+   <title>DRUM MACHINE</title>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+   <div class="main-content">
+      <div class="left"></div>
+     
+      <div class="central">
+         <section id="drum-machine">           
+            <div class="drums-main">
+               <div class="drum-left">
+                  <div class="drum-first">
+                     
+                     <div class="drum-pad" id="q">
+                        <button onclick="turnAudioOn('Q')">Q</button>
+                       
+                        <audio style="display: none" class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     <div class="drum-pad" id="w">
+                        <button onclick="turnAudioOn('W')">W</button>
+                        <audio controls style="display: none" class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>                    
+                     
+                     <div class="drum-pad" id="e">
+                        <button onclick="turnAudioOn('E')">E</button>
+                        <audio style="display: none" class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     
+                  </div>
+                  <div class="drum-second">
+                     <div class="drum-pad" id="a">
+                        <button onclick="turnAudioOn('A')">A</button>
+                        <audio style="display: none" class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                  
+                     <div class="drum-pad" id="s">
+                        <button onclick="turnAudioOn('S')">S</button>
+                        <audio style="display: none" class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     
+                     <div class="drum-pad" id="d">
+                        <button onclick="turnAudioOn('D')">D</button>
+                        <audio style="display: none" class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     
+                  </div>
+                  <div class="drum-third">
+                     <div class="drum-pad" id="z">
+                        <button onclick="turnAudioOn('Z')">Z</button>
+                        <audio style="display: none" class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     
+                     <div class="drum-pad" id="x">
+                        <button onclick="turnAudioOn('X')">X</button>
+                        <audio style="display: none" class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                     
+                     <div class="drum-pad" id="c">
+                        <button onclick="turnAudioOn('C')">C</button>
+                        <audio style="display: none" class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3">
+                           <source src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" type="audio/mp3">
+                           Your browser does not support the audio element.
+                         </audio>                         
+                     </div>
+                  </div>
+               </div>
+               <div class="drum-right">
+                  <div id="display"></div>
+               </div>
+            </div>
+ 
+         </section>
+      </div>
+      <div class="right"></div>
+   </div>
+   <script src="drum-machine.js"></script>
+</body>
+</html>
